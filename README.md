@@ -50,7 +50,7 @@ This implies a 75% probability that customers who buy bread will also purchase b
 
 3. **Lift**— assesses the strength of the association between bread and butter, determining how much more likely these items are bought together than would be expected if they were purchased independently.
 
-Lift< 1, the products are not frequently bought together by consumers.
+       Lift< 1, the products are not frequently bought together by consumers.
 
 Lift> 1, the products are frequently bought together by consumers.
 
