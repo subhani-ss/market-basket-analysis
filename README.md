@@ -115,9 +115,24 @@ plt.tight_layout()
 plt.show()
 ```
 
+## Summary
 
+This practical walkthrough demonstrates how Apriori helps uncover hidden patterns in customer purchases. Retailers can use these rules to:
 
+Recommend items (e.g., “Customers who bought bread also bought butter”)
+Bundle products for promotions
+Organize shelves for convenience and sales optimization
+Market Basket Analysis, powered by algorithms like Apriori, transforms raw transaction data into strategic insights — ultimately enhancing the shopping experience and driving revenue growth.
 
+***
+
+I hope you find this article helpful. If I’ve missed anything, let me know in the comment section.
+
+What do you think about this article? Comment!!!
+
+Follow me @ Medium | LinkedIn
+
+Thanks for reading!
 
 
 
