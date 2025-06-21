@@ -41,7 +41,7 @@ Here’s a step-by-step guide to apply MBA using the **Apriori algorithm** in Py
 
 
 
-### ✅ Step 1: Install Required Libraries
+### Step 1: Install Required Libraries
 
 ```python
 !pip install apyori
@@ -49,7 +49,96 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from collections import Counter
 from apyori import apriori
+```
 
-### ✅ Step 2: Install Required Libraries
+### Step 2: Load Dataset
+```python
 df = pd.read_csv("dailytransactions.csv")
+```
+
+### Step 3: Prepare the Transactions List
+
+```python
+transactions = []
+for _, row in df.iterrows():
+    transaction = [str(item).strip() for item in row if pd.notna(item)]
+    if transaction:
+        transactions.append(transaction)
+```
+
+### Step 4: Apply Apriori Algorithm
+
+```python
+results = apriori(transactions, min_support=0.01, min_confidence=0.5, min_lift=1.2))
+```
+
+### Step 5: Extract and Format Rules
+
+```python
+rule_data = []
+for rule in results:
+    for stat in rule.ordered_statistics:
+        if stat.items_base and stat.items_add:
+            rule_data.append({
+                'LHS (If bought)': ', '.join(stat.items_base),
+                'RHS (Then also bought)': ', '.join(stat.items_add),
+                'Support': round(rule.support, 4),
+                'Confidence': round(stat.confidence, 2),
+                'Lift': round(stat.lift, 2)
+            })
+
+df_rules = pd.DataFrame(rule_data)
+```
+
+
+### Step 6: Display Top 10 Rules
+
+```python
+top_10_rules = df_rules.sort_values(by='Lift', ascending=False).head(10)
+print(top_10_rules.to_string(index=False))
+```
+
+
+### Step 7: Visualize the Rules
+
+```python
+plt.figure(figsize=(12, 6))
+plt.barh(
+    [f"{row['LHS (If bought)']} → {row['RHS (Then also bought)']}" for _, row in top_10_rules.iterrows()],
+    top_10_rules['Lift'],
+    color='coral'
+)
+plt.xlabel("Lift")
+plt.title("Top 10 Association Rules by Lift")
+plt.gca().invert_yaxis()
+plt.tight_layout()
+plt.show()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
