@@ -1,10 +1,5 @@
 # 🛒 Uncovering Shopping Patterns: Market Basket Analysis Using the Apriori Algorithm
 
-**Author:** Subhani Shaik  
-**Read Time:** 5 minutes  
-**Published:** 2 days ago
-
----
 
 ## 🧠 Ever walked into a store for just one thing and somehow walked out with five?
 
