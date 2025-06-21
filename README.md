@@ -13,9 +13,12 @@ These aren’t random events. They’re the result of a smart, behind-the-scenes
 
 ## 📚 What is Market Basket Analysis?
 
+
 When customers buy bread, they often end up buying butter too. This buying pattern can be described with a simple rule:
 
+
 > IF `{bread}` THEN `{butter}`
+
 
 In simple terms, **MBA is a data mining technique** used to identify patterns in customer purchasing behaviour — helping businesses group products that are frequently bought together. This insight is used in everything from **recommendation engines** and **product bundling**, to **store layout design** and **marketing strategies**.
 
@@ -28,11 +31,14 @@ In simple terms, **MBA is a data mining technique** used to identify patterns in
 
 MBA uses association rules — logic-based rules that identify relationships between items. The **Apriori algorithm** is one of the most popular ways to generate these rules.
 
+
 ### 🧮 Key Metrics:
+
 
 - **Support**: Frequency of items appearing together  
 - **Confidence**: Likelihood of item B being bought when item A is bought  
 - **Lift**: How much more likely items are bought together compared to being bought independently
+
 
 To better understand Market Basket Analysis (MBA), imagine a small grocery store where customers purchase everyday items like bread, butter, milk, and tomatoes. In this example, the goal is to determine how often customers who buy bread also purchase butter.
 
@@ -41,7 +47,7 @@ To better understand Market Basket Analysis (MBA), imagine a small grocery store
 
 
 1. **Support** — It measures the proportion of transactions in which both bread and butter are purchased together. It is calculated as:
-2. 
+   
 ![image](https://github.com/user-attachments/assets/d43c2b51-5c50-449d-b032-9faf8e976e24)
 
 This indicates that 60% of all transcation include both bread and butter.
