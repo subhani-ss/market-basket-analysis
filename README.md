@@ -7,6 +7,7 @@ Maybe it was a chocolate bar perfectly placed next to the checkout, or a kitchen
 
 These aren’t random events. They’re the result of a smart, behind-the-scenes data strategy called **Market Basket Analysis (MBA)** — a technique retailers use to uncover the secret connections between what we buy and why we buy it.
 
+![image](https://github.com/user-attachments/assets/22ebe8b9-7c8d-48c4-a598-5326057a3edd)
 
 
 ## 📚 What is Market Basket Analysis?
