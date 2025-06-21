@@ -8,6 +8,7 @@ Maybe it was a chocolate bar perfectly placed next to the checkout, or a kitchen
 These aren’t random events. They’re the result of a smart, behind-the-scenes data strategy called **Market Basket Analysis (MBA)** — a technique retailers use to uncover the secret connections between what we buy and why we buy it.
 
 
+
 ## 📚 What is Market Basket Analysis?
 
 When customers buy bread, they often end up buying butter too. This buying pattern can be described with a simple rule:
@@ -15,6 +16,7 @@ When customers buy bread, they often end up buying butter too. This buying patte
 > IF `{bread}` THEN `{butter}`
 
 In simple terms, **MBA is a data mining technique** used to identify patterns in customer purchasing behaviour — helping businesses group products that are frequently bought together. This insight is used in everything from **recommendation engines** and **product bundling**, to **store layout design** and **marketing strategies**.
+
 
 
 ## 🔍 Association Rule Mining with Apriori
@@ -51,10 +53,12 @@ from collections import Counter
 from apyori import apriori
 ```
 
+
 ### Step 2: Load Dataset
 ```python
 df = pd.read_csv("dailytransactions.csv")
 ```
+
 
 ### Step 3: Prepare the Transactions List
 
@@ -66,11 +70,13 @@ for _, row in df.iterrows():
         transactions.append(transaction)
 ```
 
+
 ### Step 4: Apply Apriori Algorithm
 
 ```python
 results = apriori(transactions, min_support=0.01, min_confidence=0.5, min_lift=1.2))
 ```
+
 
 ### Step 5: Extract and Format Rules
 
@@ -114,6 +120,8 @@ plt.gca().invert_yaxis()
 plt.tight_layout()
 plt.show()
 ```
+
+
 
 ## Summary
 
