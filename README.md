@@ -54,7 +54,7 @@ This indicates that 60% of all transcation include both bread and butter.
 
 
 3. **Confidence** — represents the likelihood of purchasing butter given that bread has been purchased.
-4. 
+   
 ![image](https://github.com/user-attachments/assets/7e6a871e-2e58-4029-9aea-3fa78db24f34)
 
 This implies a 75% probability that customers who buy bread will also purchase butter.
@@ -68,6 +68,7 @@ This implies a 75% probability that customers who buy bread will also purchase b
 
 
 ![image](https://github.com/user-attachments/assets/96e90717-817a-4a0b-bad8-1efd8ce07ced)
+
 
 A lift of 1.25 means customers who buy Bread are 25% more likely to buy Butter compared to the average. Since Lift > 1, this is a positive association.
 
