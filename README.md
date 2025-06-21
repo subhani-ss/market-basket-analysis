@@ -53,14 +53,14 @@ To better understand Market Basket Analysis (MBA), imagine a small grocery store
 This indicates that 60% of all transcation include both bread and butter.
 
 
-3. **Confidence** — represents the likelihood of purchasing butter given that bread has been purchased.
+2. **Confidence** — represents the likelihood of purchasing butter given that bread has been purchased.
    
 ![image](https://github.com/user-attachments/assets/7e6a871e-2e58-4029-9aea-3fa78db24f34)
 
 This implies a 75% probability that customers who buy bread will also purchase butter.
 
 
-4. **Lift**— assesses the strength of the association between bread and butter, determining how much more likely these items are bought together than would be expected if they were purchased independently.
+3. **Lift**— assesses the strength of the association between bread and butter, determining how much more likely these items are bought together than would be expected if they were purchased independently.
 
        Lift< 1, the products are not frequently bought together by consumers.
        Lift> 1, the products are frequently bought together by consumers.
